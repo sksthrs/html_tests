@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+
+html , body {
+  width: 100%;
+  height: 100%;
+  border: none;
+  margin: 0;
+  padding: 0;
+  color: white;
+  background-color: black;
+  font-family: sans-serif;
+}
+
+#main {
+  width: 100%;
+  height: 100%;
+  border: 2px solid #8F8;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+}
+
+#input1 { font-size: 14px; }
+#input2 { font-size: 16px; }
+#input3 { font-size: 14pt; }
+#input4 { font-size: 16pt; }
+#input5 { font-size: 18pt; }
+#input6 { font-size: 20pt; }
+#input7 { font-size: 22pt; }
+#input8 { font-size: 24pt; }

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML tests</title>
+  <link href="index_style.css" rel="stylesheet">
+</head>
+<body>
+  <p>このリポジトリでは、HTML/CSS/JavaScriptについての細かい挙動を確認するテストページを集めています。</p>
+
+  <article>
+    <h1><a href="iphone_autozoom.html">iPhoneが入力欄で自動ズームする条件</a></h1>
+    <p>iPhoneのブラウザは、inputのようなテキスト入力欄をタップすると（フォーカスすると）、勝手にズームしてしまいます。しかも入力終了後（フォーカス解除後）も、ズームレベルが元に戻りません。</p>
+    <p>この挙動に対しては、入力欄のフォントサイズを「16px以上」にすれば回避できるという情報があります。</p>
+    <p>iOSでフォーム入力時に画面がズームされる<br><a href="http://cly7796.net/wp/css/the-screen-zooms-when-filling-out-forms-on-ios/">http://cly7796.net/wp/css/the-screen-zooms-when-filling-out-forms-on-ios/</a></p>
+    <p>しかし、通常はptでサイズを指定している場合、pxの混在は嬉しい話ではありません。</p>
+    <p><a href="https://developer.mozilla.org/ja/docs/Learn/CSS/Building_blocks/Values_and_units">MDNにある単位の記述</a>から考えれば、pt値の0.75倍がpx値（px値の4/3倍がpt値）のはずなので、これに従えば21.4pt以上ならいいことになります。</p>
+    <p>本ページでは、複数のフォントサイズを設定した入力欄を並べて、この挙動を確認することができます。</p>
+  </article>
+</body>
+</html>
